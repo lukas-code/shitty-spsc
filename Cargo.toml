@@ -1,0 +1,16 @@
+[package]
+name = "spsc"
+version = "0.1.0"
+authors = ["Student <student@informatik.hu-berlin.de>"]
+edition = "2021"
+
+[lib]
+name = "spsc"
+
+[dev-dependencies]
+criterion = "0.5"
+lazy_static = "1.4"
+
+[[bench]]
+name = "benchmark"
+harness = false
