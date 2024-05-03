@@ -300,4 +300,11 @@ mod tests {
             }
         }
     }
+
+    #[test]
+    fn deadlock() {
+        let (px, cx) = channel();
+        px.send(1).unwrap();
+        cx.recv().unwrap();
+    }
 }
